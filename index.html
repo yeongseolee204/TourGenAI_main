@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tour Gen.AI 오픈마켓 페이지</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+        * {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        .maintitle { /*사이트 이름 부분입니다. 그냥 긁어와서.. 연관없는 코딩부분도 있어요*/
+            height: 40px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.chf.or.kr/jnrepo/namo/img/images/000045/20230405103334542_MPZHA77B.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .input-group { /*검색창 부분입니다.*/
+            margin: 120px auto 12px auto;
+            max-width: 1168px;
+        }
+
+        .col { /*액티비티 카드 부분입니다.*/
+            width: 374px;
+            margin: 120px 12px auto 12px;
+        }
+
+        .activity_cate { /*액티비티 (도시이름) 부분입니다.*/
+            color: #d13535;
+            font-size: 15px;
+            margin: 10px 0px 10px 10px; /*글자가 달라붙어서 마진을 줬어요*/
+        }
+
+        .activity_title { /*액티비티 Title 부분입니다*/
+            margin-left: 10px; /*왼쪽으로 글자가 달라붙어서 마진을 줬어요*/
+        }
+
+        .activity_star { /*액티비티 평점 부분입니다*/
+            margin-left: 10px; /*왼쪽으로 글자가 달라붙어서 마진을 줬어요*/
+        }
+
+        .activity_price { /*액티비티 가격 부분입니다*/
+            margin-left: 10px; /*왼쪽으로 글자가 달라붙어서 마진을 줬어요*/
+        }
+    </style>
+</head>
+
+<body style="overflow-x: hidden"> <!--가로스크롤이 생겨서 너비 조정을 해봤는데 뭐가 문젠지 모르겠어서 일단 이걸로..햇습니다 -->
+    <div class="main_title">
+        <h1>Tour Gen.AI 오픈마켓 메인 페이지입니다</h1>
+    </div>
+
+
+    <div class="input-group">
+        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+            aria-describedby="search-addon" />
+        <button type="button" class="btn btn-outline-primary">search</button>
+    </div>
+
+    <div id="activity_box" class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
+        <div class="col">
+            <div class="card h-100" style="width: 373px;">
+                <img src="https://www.chf.or.kr/jnrepo/namo/img/images/000045/20230405103334542_MPZHA77B.jpg"
+                    class="activity_img" alt="...">
+                <div class="card_body">
+                    <p class="activity_cate">액티비티 (도시이름)</p>
+                    <h3 class="activity_title">Title</h3>
+                    <p class="activity_star">⭐(평점) (후기 개수)</p>
+                    <p class="activity_price">(price)원</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="width: 373px;">
+                <img src="https://www.chf.or.kr/jnrepo/namo/img/images/000045/20230405103334542_MPZHA77B.jpg"
+                    class="activity_img" alt="...">
+                <div class="card_body">
+                    <p class="activity_cate">액티비티 서울</p>
+                    <h3 class="activity_title">Title</h3>
+                    <p class="activity_star">⭐(평점) (후기 개수)</p>
+                    <p class="activity_price">(price)원</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="width: 373px;">
+                <img src="https://www.chf.or.kr/jnrepo/namo/img/images/000045/20230405103334542_MPZHA77B.jpg"
+                    class="activity_img" alt="...">
+                <div class="card_body">
+                    <p class="activity_cate">액티비티 서울</p>
+                    <h3 class="activity_title">Title</h3>
+                    <p class="activity_star">⭐(평점) (후기 개수)</p>
+                    <p class="activity_price">(price)원</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="width: 373px;">
+                <img src="https://www.chf.or.kr/jnrepo/namo/img/images/000045/20230405103334542_MPZHA77B.jpg"
+                    class="activity_img" alt="...">
+                <div class="card_body">
+                    <p class="activity_cate">액티비티 서울</p>
+                    <h3 class="activity_title">Title</h3>
+                    <p class="activity_star">⭐(평점) (후기 개수)</p>
+                    <p class="activity_price">(price)원</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="width: 373px;">
+                <img src="https://www.chf.or.kr/jnrepo/namo/img/images/000045/20230405103334542_MPZHA77B.jpg"
+                    class="activity_img" alt="...">
+                <div class="card_body">
+                    <p class="activity_cate">액티비티 서울</p>
+                    <h3 class="activity_title">Title</h3>
+                    <p class="activity_star">⭐(평점) (후기 개수)</p>
+                    <p class="activity_price">(price)원</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="width: 373px;">
+                <img src="https://www.chf.or.kr/jnrepo/namo/img/images/000045/20230405103334542_MPZHA77B.jpg"
+                    class="activity_img" alt="...">
+                <div class="card_body">
+                    <p class="activity_cate">액티비티 서울</p>
+                    <h3 class="activity_title">Title</h3>
+                    <p class="activity_star">⭐(평점) (후기 개수)</p>
+                    <p class="activity_price">(price)원</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="width: 373px;">
+                <img src="https://www.chf.or.kr/jnrepo/namo/img/images/000045/20230405103334542_MPZHA77B.jpg"
+                    class="activity_img" alt="...">
+                <div class="card_body">
+                    <p class="activity_cate">액티비티 서울</p>
+                    <h3 class="activity_title">Title</h3>
+                    <p class="activity_star">⭐(평점) (후기 개수)</p>
+                    <p class="activity_price">(price)원</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="width: 373px;">
+                <img src="https://www.chf.or.kr/jnrepo/namo/img/images/000045/20230405103334542_MPZHA77B.jpg"
+                    class="activity_img" alt="...">
+                <div class="card_body">
+                    <p class="activity_cate">액티비티 서울</p>
+                    <h3 class="activity_title">Title</h3>
+                    <p class="activity_star">⭐(평점) (후기 개수)</p>
+                    <p class="activity_price">(price)원</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
